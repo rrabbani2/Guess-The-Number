@@ -1,9 +1,14 @@
 import random
 
-def number_checker(number):
-    guesser = random.randint(1,10)
-    if int(number) ==  guesser:
-        return {"win":True,"answer":guesser}
+def number_checker(userguess):
+    realnumber = random.randint(1,10)
+    if int(userguess) ==  realnumber:
+        return {"win":True,"answer":realnumber}
     else:
-        return {"win":False,"answer":guesser}
+        return {"win":False,"answer":realnumber}
        
+def repeatcheck(userguess, realnumber): 
+    if userguess==realnumber:
+        return {"win":True,"answer":realnumber}
+    else:
+        return {"win":False,"answer":realnumber}
