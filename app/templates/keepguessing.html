@@ -23,6 +23,7 @@
 						<header>
 							<h1>Sorry you choose the wrong Try Again</h1>
 							<p>The number you guessed was {{num}}</p>
+							<p>{{hint}}</p>
 							<form method= "post" action="/keepguessing">
             					<input type="text" name="numguesser" placeholder="Enter a number"/>
             					<input type="hidden" name="realanswer" value= "{{x}}"/>
