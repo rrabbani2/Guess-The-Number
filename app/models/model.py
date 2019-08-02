@@ -1,7 +1,7 @@
 import random
 
 def number_checker(userguess):
-    realnumber = random.randint(1,10)
+    realnumber = random.randint(1,1000)
     if int(userguess) ==  realnumber:
         return {"win":True,"answer":realnumber,"hint":"Nothing here"}
     elif int(userguess)>int(realnumber):
